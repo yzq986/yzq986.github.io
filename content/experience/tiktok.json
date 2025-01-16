@@ -1,0 +1,68 @@
+{
+  "company": "Tiktok - 国际化电商 - 算法专家",
+  "period": "2024年 -- 至今",
+  "role": "国际化电商推荐组成员",
+  "description": "排序基础技术优化，持续迭代粗精排的特征信号、模型结构、样本和排序目标",
+  "projects": [
+    {
+      "name": "粗排 Listwise 数据流蒸馏",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "通过补充全精排打分样本至粗排数据流，实现线上线下打分对齐"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "采用蒸馏任务作为隐式任务头，优化蒸馏策略，反转掉重型结构"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "US地区获得商城人均GMV+1.4957%，UV_CTR+0.4300%显著提升"
+        }
+      ]
+    },
+    {
+      "name": "粗排融合公式迭代，VT链路重构",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "优化粗排融合公式配置化管理，简化模型调整流程"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "type": "optimization",
+          "content": "系统化调参策略优化"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "US区域获得显著增长：UV_CTR +0.3650%，GMV +0.9536%"
+        }
+      ]
+    },
+    {
+      "name": "精排子场景，小模型替代大模型",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "通过复用全场景大模型与场景内小模型的结合方式，成功用Lite模型替代原有场景内大模型"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "小模型使用场景内样本流训练，减少资源消耗，加速训练过程"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "保持GMV和CTCVR基本持平的同时，减少52.73%训练PS消耗与79.9%线上PS消耗"
+        }
+      ]
+    }
+  ]
+} 

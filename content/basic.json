@@ -1,0 +1,33 @@
+{
+  "basicInfo": {
+    "name": "叶子卿",
+    "contacts": {
+      "email": [
+        {
+          "value": "yez****@mail2.sysu.edu.cn",
+          "icon": "fa-envelope"
+        },
+        {
+          "value": "yezi****@gmail.com",
+          "icon": "fa-envelope"
+        }
+      ],
+      "phone": [
+        {
+          "value": "(+86) 131-****-6485",
+          "icon": "fa-phone"
+        },
+        {
+          "value": "(+65) 802*-****",
+          "icon": "fa-phone"
+        }
+      ]
+    }
+  },
+  "education": {
+    "university": "中山大学",
+    "degree": "计算机科学与技术专业",
+    "period": "2015 年 -- 2019 年",
+    "gpa": "3.8/4.0"
+  }
+} 

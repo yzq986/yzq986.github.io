@@ -1,0 +1,28 @@
+{
+  "company": "Google - Software Development Engineer",
+  "period": "2019 -- 2020",
+  "role": "Software Development Engineer",
+  "description": "Development, implementation, testing, and deployment of advertising revenue prediction project",
+  "projects": [
+    {
+      "name": "Advertising Revenue Prediction Project",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Designed algorithmic framework and implemented revenue prediction based on Google advertising business data"
+        },
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Implemented revenue predictions for daily, monthly, quarterly, and annual periods"
+        },
+        {
+          "icon": "fa-rocket",
+          "type": "deployment",
+          "content": "Identified peak revenue periods annually, completed comparative testing and deployment"
+        }
+      ]
+    }
+  ]
+} 

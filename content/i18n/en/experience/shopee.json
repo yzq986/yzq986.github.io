@@ -1,0 +1,98 @@
+{
+  "company": "Shopee SG - Senior Algorithm Engineer",
+  "period": "2021 -- 2024",
+  "role": "Daily Discovery Team Member",
+  "description": "Design and optimize ranking models for Shopee homepage recommendation system",
+  "projects": [
+    {
+      "name": "First Version Multi-objective Cascade Coarse Ranking Model Deployment Across All Regions",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Shared training and inference framework with fine ranking, accelerated online inference by caching item-side embeddings"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Adopted three-tower + top MLP fusion architecture to obtain cross-information while ensuring inference efficiency"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "Achieved ~46ms coarse ranking latency with 3000 item inputs, significant improvements across all regions"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Multiple metrics improved: ID +2.33% click +1.59%, BR +2.3% order, VN +3.92% order"
+        }
+      ]
+    },
+    {
+      "name": "Dual Coarse Ranking Joint Model Research and Implementation",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Utilized in-batch random negative samples and adopted CLIP's bidirectional CE loss with adaptive temperature coefficient"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Achieved +5.23% order improvement offline, +2.3% click in ID and +3.36% order in SG regions online"
+        }
+      ]
+    },
+    {
+      "name": "Coarse Ranking Multi-objective ESMM Structure Upgrade",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Introduced multi-level objectives, flexible adjustment of online scoring sequence weights, optimized item ranking and implicit objective training"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Achieved 3.35% order/user improvement in ID region"
+        }
+      ]
+    },
+    {
+      "name": "Fine Ranking JRC Structure Upgrade",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Replaced pointwise training with listwise training, adopted RCR loss and CE+GE loss from JRC paper"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Achieved 4% click/user improvement in ID region"
+        }
+      ]
+    },
+    {
+      "name": "Shop Display Page Fine Ranking Model Feature Selection",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Introduced slot multiplier optimization for feature selection, removed 59 low-weight multipliers"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "Reduced storage capacity by 50%, improved training speed by 50%"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Improved order metrics by +1.27% while maintaining global click rate"
+        }
+      ]
+    }
+  ]
+} 

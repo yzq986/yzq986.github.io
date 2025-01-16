@@ -1,0 +1,33 @@
+{
+  "basicInfo": {
+    "name": "Ziqing Ye",
+    "contacts": {
+      "email": [
+        {
+          "value": "yez****@mail2.sysu.edu.cn",
+          "icon": "fa-envelope"
+        },
+        {
+          "value": "yezi****@gmail.com",
+          "icon": "fa-envelope"
+        }
+      ],
+      "phone": [
+        {
+          "value": "(+86) 131-****-6485",
+          "icon": "fa-phone"
+        },
+        {
+          "value": "(+65) 802*-****",
+          "icon": "fa-phone"
+        }
+      ]
+    }
+  },
+  "education": {
+    "university": "Sun Yat-sen University",
+    "degree": "Computer Science and Technology",
+    "period": "2015 -- 2019",
+    "gpa": "3.8/4.0"
+  }
+} 

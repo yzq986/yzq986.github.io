@@ -1,0 +1,27 @@
+{
+  "activities": [
+    {
+      "organization": "SYSU ACM/ICPC Club",
+      "period": "2016 -- 2017",
+      "role": "Technical Director",
+      "description": "Organized algorithm lectures, programming contests for beginners, and school competitions",
+      "details": [
+        {
+          "icon": "fa-chalkboard-teacher",
+          "type": "teaching",
+          "content": "Organized algorithm lectures and trained new members"
+        },
+        {
+          "icon": "fa-trophy",
+          "type": "competition",
+          "content": "Hosted programming contests for beginners to increase interest in programming"
+        },
+        {
+          "icon": "fa-users",
+          "type": "organization",
+          "content": "Organized school-wide competitions to discover talented programmers"
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,68 @@
+{
+  "company": "TikTok - Global E-commerce - Algorithm Expert",
+  "period": "2024 -- Present",
+  "role": "Global E-commerce Recommendation Team Member",
+  "description": "Ranking system optimization, iterating on feature signals, model structures, samples and ranking objectives for both coarse and fine ranking",
+  "projects": [
+    {
+      "name": "Coarse Ranking Listwise Data Flow Distillation",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Achieved online-offline score alignment by supplementing fine ranking scoring samples into coarse ranking data flow"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Optimized distillation strategy using implicit task heads, reversed heavy structures"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Achieved significant improvements in US region: Shop GMV/capita +1.4957%, UV_CTR +0.4300%"
+        }
+      ]
+    },
+    {
+      "name": "Coarse Ranking Fusion Formula Iteration, VT Pipeline Reconstruction",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Optimized configuration management for coarse ranking fusion formula, simplified model adjustment process"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "type": "optimization",
+          "content": "Systematic parameter optimization strategy"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Significant growth in US region: UV_CTR +0.3650%, GMV +0.9536%"
+        }
+      ]
+    },
+    {
+      "name": "Fine Ranking Sub-scenarios, Small Models Replacing Large Models",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Successfully replaced original large scenario models with Lite models by combining global large models and scenario-specific small models"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Small models trained with scenario-specific sample flow, reducing resource consumption and accelerating training process"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "Maintained GMV and CTCVR while reducing training PS consumption by 52.73% and online PS consumption by 79.9%"
+        }
+      ]
+    }
+  ]
+} 

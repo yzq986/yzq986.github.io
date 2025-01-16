@@ -1,0 +1,28 @@
+{
+  "company": "Google - 软件开发工程师",
+  "period": "2019年 -- 2020年",
+  "role": "软件开发工程师",
+  "description": "完成广告收入预测项目的开发、实现、测试、上线",
+  "projects": [
+    {
+      "name": "广告收入预测项目",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "基于Google广告业务的收入数据，设计算法框架，实现对广告收入的预测"
+        },
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "分别对一天、一个月、一个季度、一年的收入进行预测"
+        },
+        {
+          "icon": "fa-rocket",
+          "type": "deployment",
+          "content": "识别每年的高峰收入时间区域，并完成对比测试和上线"
+        }
+      ]
+    }
+  ]
+} 

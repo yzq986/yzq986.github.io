@@ -1,0 +1,60 @@
+{
+  "awards": [
+    {
+      "title": "Gold Medal",
+      "date": "December 2017",
+      "description": "ACM-ICPC Asia Regional Contest Finals 2017",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Gold Medal (5th Place)",
+      "date": "November 2017",
+      "description": "ACM-ICPC Asia Regional Contest Hong Kong 2017",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Gold Medal",
+      "date": "October 2017",
+      "description": "ACM-ICPC Asia Regional Contest Shenyang 2017",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Gold Medal",
+      "date": "November 2016",
+      "description": "ACM-ICPC Asia Regional Contest Qingdao 2016",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Gold Medal (5th Place)",
+      "date": "September 2016",
+      "description": "CCPC Changchun Regional Contest 2016",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Silver Medal (18th Place)",
+      "date": "December 2016",
+      "description": "CCPC Finals 2016",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Bronze Medal",
+      "date": "August 2013",
+      "description": "National Olympiad in Informatics (NOI) 2013",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Meritorious Winner",
+      "date": "April 2017",
+      "description": "Mathematical Contest in Modeling (MCM) 2017",
+      "type": "competition",
+      "icon": "fa-trophy"
+    }
+  ]
+} 

@@ -1,0 +1,28 @@
+{
+  "company": "BIGO - Algorithm Engineer - Internship",
+  "period": "2019",
+  "role": "Algorithm Team Member",
+  "description": "Completed audio fast clustering algorithm patent and implemented all code details",
+  "projects": [
+    {
+      "name": "Audio Fast Clustering Algorithm Patent",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Designed hash algorithm for comparing large volumes of short video audio within time constraints, tailored for BIGO's Like app audio characteristics"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "type": "optimization",
+          "content": "Designed corresponding feature clustering algorithm, optimized time complexity based on business requirements"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "Adapted algorithm for large-scale data comparison needs in business scenarios"
+        }
+      ]
+    }
+  ]
+} 

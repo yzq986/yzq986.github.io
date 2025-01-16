@@ -1,0 +1,78 @@
+{
+  "company": "微信视频号 - 算法工程师",
+  "period": "2020年 -- 2021年",
+  "role": "算法推荐一组成员",
+  "description": "完成微信视频号视频推荐算法相关研究及后台数据支持",
+  "projects": [
+    {
+      "name": "lookalike模型架构搭建",
+      "details": [
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "在热门feed推荐中搭建lookalike链路，完成u2u人群扩展"
+        },
+        {
+          "icon": "fa-database",
+          "type": "database",
+          "content": "通过mq缓冲处理，使同一item的曝光聚合后生成hist数据，日曝光量约3.3亿"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "使用cache做轮次内缓存，bdemem做轮次间缓存，优化线上推理性能"
+        }
+      ]
+    },
+    {
+      "name": "框架预测流程迁移接入metis 1.0架构",
+      "details": [
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "完成模型架构转移，使模型infer embedding部分逻辑与原流程解耦"
+        },
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "新建rpc接口，负责对所有请求计算infer的embedding值"
+        }
+      ]
+    },
+    {
+      "name": "冷启动推荐提权融合公式修改",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "替换原有冷启链路，启用基于pid控制的融合提权公式"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "type": "optimization",
+          "content": "精细化考虑观看时长、完播、点赞等特征，调整冷启出量控制"
+        }
+      ]
+    },
+    {
+      "name": "推荐架构数组类型特征支持",
+      "details": [
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "在视频feed推荐流程中新增对数组类型feature的支持"
+        },
+        {
+          "icon": "fa-database",
+          "type": "database",
+          "content": "完成在数据流模型中各部分对列表特征的支持"
+        },
+        {
+          "icon": "fa-rocket",
+          "type": "deployment",
+          "content": "完成在线数据流与模型训练的对接工作"
+        }
+      ]
+    }
+  ]
+} 

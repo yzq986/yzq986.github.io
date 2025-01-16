@@ -1,0 +1,98 @@
+{
+  "company": "Shopee SG - 高级算法工程师",
+  "period": "2021年 -- 2024年",
+  "role": "Daily Discovery组成员",
+  "description": "针对Shopee首页推荐业务，设计排序模型以及效果性能优化",
+  "projects": [
+    {
+      "name": "全区域上线第一版多目标级联粗排模型",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "与精排共用训练推理框架，通过缓存item侧embedding加速线上推理过程"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "选用三塔+顶部MLP融合架构，在保证推理效率前提下获得交叉信息"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "在3000 item输入量下，粗排延迟约46ms，全区域获得显著提升"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "ID +2.33% click +1.59%，BR +2.3% order，VN +3.92% order等多项指标改善"
+        }
+      ]
+    },
+    {
+      "name": "双粗排联合模型研究实践",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "使用in-batch随机负样本并借鉴CLIP的双向计算CE loss与自适应温度系数"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "离线实现+5.23%的order提升，线上ID和SG区域分别取得+2.3% click和+3.36% order提升"
+        }
+      ]
+    },
+    {
+      "name": "粗排多目标升级ESMM结构",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "引入多级别目标，灵活调整线上评分序列的权重，优化item排名与隐含目标训练"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "ID区域获得order/u 3.35%的提升"
+        }
+      ]
+    },
+    {
+      "name": "精排升级JRC结构",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "将pointwise训练替换为listwise训练，借鉴RCR loss和JRC论文中的CE+GE loss"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "ID区域获得click/u 4%的提升"
+        }
+      ]
+    },
+    {
+      "name": "商店展示页精排模型特征筛选",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "引入slot乘子优化特征筛选，去掉59个低权重乘子"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "减少50%存储容量，提升50%训练速度"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "全局click持平情况下，order指标提升+1.27%"
+        }
+      ]
+    }
+  ]
+} 

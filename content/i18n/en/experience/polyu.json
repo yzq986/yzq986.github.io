@@ -1,0 +1,23 @@
+{
+    "company": "The Hong Kong Polytechnic University - Research Assistant",
+    "role": "Research Assistant (Exchange Student)",
+    "period": "2018",
+    "description": "Served as a Research Assistant during exchange program, focusing on blockchain applications in supply chain management",
+    "projects": [
+        {
+            "name": "Blockchain-Driven Trusted Supply Chain System Research",
+            "details": [
+                {
+                    "type": "research",
+                    "content": "Investigated the potential of blockchain technology in enhancing supply chain trust and transparency",
+                    "icon": "fa-search"
+                },
+                {
+                    "type": "engineering",
+                    "content": "Designed and implemented a blockchain-based supply chain tracking prototype",
+                    "icon": "fa-code"
+                }
+            ]
+        }
+    ]
+} 

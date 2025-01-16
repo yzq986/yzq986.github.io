@@ -1,0 +1,28 @@
+{
+  "company": "BIGO - 算法工程师 - 实习",
+  "period": "2019年",
+  "role": "算法组成员",
+  "description": "完成音频快速聚类算法专利，实现所有代码细节",
+  "projects": [
+    {
+      "name": "音频快速聚类算法专利",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "针对BIGO短视频app Like的音频特点，设计适合在给定时间限制内完成大量短视频音频比对的hash算法"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "type": "optimization",
+          "content": "设计对应的特征聚类算法，针对业务特点进行算法时间复杂度优化"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "使算法适用于业务场景大规模的数据比对需求"
+        }
+      ]
+    }
+  ]
+} 

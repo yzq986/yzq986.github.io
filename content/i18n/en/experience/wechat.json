@@ -1,0 +1,78 @@
+{
+  "company": "WeChat Channels - Algorithm Engineer",
+  "period": "2020 -- 2021",
+  "role": "Algorithm Recommendation Team Member",
+  "description": "Research and development of video recommendation algorithms and backend data support for WeChat Channels",
+  "projects": [
+    {
+      "name": "Lookalike Model Architecture Development",
+      "details": [
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "Built lookalike pipeline in hot feed recommendations, implemented user-to-user crowd expansion"
+        },
+        {
+          "icon": "fa-database",
+          "type": "database",
+          "content": "Generated historical data through MQ buffer processing by aggregating impressions for the same item, handling ~330M daily impressions"
+        },
+        {
+          "icon": "fa-bolt",
+          "type": "performance",
+          "content": "Optimized online inference performance using cache for intra-round caching and bdemem for inter-round caching"
+        }
+      ]
+    },
+    {
+      "name": "Framework Prediction Process Migration to Metis 1.0 Architecture",
+      "details": [
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "Completed model architecture migration, decoupling model inference embedding logic from original process"
+        },
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Created new RPC interface for computing inference embeddings for all requests"
+        }
+      ]
+    },
+    {
+      "name": "Cold Start Recommendation Boost Formula Modification",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Replaced original cold start pipeline with PID control-based fusion boost formula"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "type": "optimization",
+          "content": "Fine-tuned cold start volume control considering watch time, completion rate, likes and other features"
+        }
+      ]
+    },
+    {
+      "name": "Array Type Feature Support for Recommendation Architecture",
+      "details": [
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "Added support for array type features in video feed recommendation pipeline"
+        },
+        {
+          "icon": "fa-database",
+          "type": "database",
+          "content": "Implemented list feature support across all components in the data flow model"
+        },
+        {
+          "icon": "fa-rocket",
+          "type": "deployment",
+          "content": "Completed integration between online data flow and model training"
+        }
+      ]
+    }
+  ]
+} 

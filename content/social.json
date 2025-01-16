@@ -1,0 +1,27 @@
+{
+  "activities": [
+    {
+      "organization": "中山大学ACMM协会",
+      "period": "2016年 -- 2017年",
+      "role": "技术部部长",
+      "description": "组织举办算法讲座、程序设计新手赛、校赛",
+      "details": [
+        {
+          "icon": "fa-chalkboard-teacher",
+          "type": "teaching",
+          "content": "组织算法讲座，培训新成员"
+        },
+        {
+          "icon": "fa-trophy",
+          "type": "competition",
+          "content": "举办程序设计新手赛，提升新生编程兴趣"
+        },
+        {
+          "icon": "fa-users",
+          "type": "organization",
+          "content": "组织校赛，发掘优秀的程序设计人才"
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,45 @@
+{
+  "category": "学校项目",
+  "items": [
+    {
+      "name": "基于Unity3D开发的小游戏",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "使用Unity3D完成一个爬山跑酷游戏"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "实现贴图渲染、Phong光照、碰撞检测等计算机图形学核心任务"
+        },
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "加入随机地形系统等创新元素，增加游戏多样性"
+        }
+      ]
+    },
+    {
+      "name": "人工智能小程序",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "实现五子棋对抗搜索alpha-beta剪枝"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "实现华容道A*剪枝算法"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "实现图像识别bp算法"
+        }
+      ]
+    }
+  ]
+} 

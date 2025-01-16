@@ -1,0 +1,60 @@
+{
+  "awards": [
+    {
+      "title": "金奖",
+      "date": "2017年12月",
+      "description": "2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛总决赛",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "金奖第五名",
+      "date": "2017年11月",
+      "description": "2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛香港站",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "金奖",
+      "date": "2017年10月",
+      "description": "2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛沈阳站",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "金奖",
+      "date": "2016年11月",
+      "description": "2016年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛青岛站",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "金奖第五名",
+      "date": "2016年9月",
+      "description": "2016年CCPC中国大学生程序设计竞赛长春赛区",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "银奖第十八名",
+      "date": "2016年12月",
+      "description": "2016年CCPC中国大学生程序设计竞赛总决赛",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "铜牌",
+      "date": "2013年8月",
+      "description": "2013年全国青少年信息学奥林匹克竞赛",
+      "type": "competition",
+      "icon": "fa-trophy"
+    },
+    {
+      "title": "Meritorious Winner",
+      "date": "2017年4月",
+      "description": "2017年美国大学生数学建模竞赛",
+      "type": "competition",
+      "icon": "fa-trophy"
+    }
+  ]
+} 

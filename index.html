@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">叶子卿的简历</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/config.js"></script>
+    <script src="js/i18n/zh.js"></script>
+    <script src="js/i18n/en.js"></script>
+    <script src="js/languageManager.js"></script>
+    <script src="js/themeManager.js"></script>
+    <script src="js/pdfExporter.js"></script>
+    <script src="js/resumeLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = new ResumeLoader();
+            const themeManager = new ThemeManager();
+            const langManager = new LanguageManager();
+            // const pdfExporter = new PDFExporter();
+            loader.loadAllContent();
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1></h1>
+        <div class="contact-info"></div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" data-i18n-key="education">
+            <i class="fas fa-graduation-cap icon"></i>
+            <span>教育背景</span>
+        </h2>
+        <div id="education"></div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" data-i18n-key="experience">
+            <i class="fas fa-briefcase icon"></i>
+            <span>工作经验</span>
+        </h2>
+        <div id="work-experience"></div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" data-i18n-key="awards">
+            <i class="fas fa-trophy icon"></i>
+            <span>获奖经历</span>
+        </h2>
+        <div id="awards" class="achievement-list"></div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" data-i18n-key="projects">
+            <i class="fas fa-project-diagram icon"></i>
+            <span>项目经历</span>
+        </h2>
+        <div id="projects"></div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title" data-i18n-key="social">
+            <i class="fas fa-users icon"></i>
+            <span>社会活动</span>
+        </h2>
+        <div id="social"></div>
+    </div>
+</body>
+</html> 

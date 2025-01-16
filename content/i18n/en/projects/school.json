@@ -1,0 +1,45 @@
+{
+  "category": "School Projects",
+  "items": [
+    {
+      "name": "Unity3D-based Mini Game",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Developed a mountain parkour game using Unity3D"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Implemented core computer graphics tasks including texture rendering, Phong lighting, and collision detection"
+        },
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "Added innovative elements like random terrain system to increase game variety"
+        }
+      ]
+    },
+    {
+      "name": "Artificial Intelligence Mini Programs",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Implemented alpha-beta pruning for Gomoku game AI"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Implemented A* pruning algorithm for Klotski puzzle"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "Implemented BP algorithm for image recognition"
+        }
+      ]
+    }
+  ]
+} 
