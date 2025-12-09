@@ -8,6 +8,7 @@ class ResumeLoader {
             basic: 'content/basic.json',
             awards: 'content/awards.json',
             experience: {
+                cex: 'content/experience/cex.json',
                 tiktok: 'content/experience/tiktok.json',
                 shopee: 'content/experience/shopee.json',
                 wechat: 'content/experience/wechat.json',

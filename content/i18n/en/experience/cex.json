@@ -1,0 +1,103 @@
+{
+  "company": "A Top-tier Exchange - Square Feed Stream - Algorithm Lead",
+  "period": "2025 — Present",
+  "role": "Head of Square Recommendation Algorithms | Tech Lead",
+  "description": "As the algorithm lead for the Square Feed recommendation system, I am responsible end-to-end for algorithm optimization, engineering architecture, and team collaboration, driving a breakthrough in trading conversion for the Square feed. By establishing a complete trading attribution system, enabling cross-team collaboration, and optimizing full-stack system performance, I delivered an estimated annual incremental trading contribution of 4.11B USDT.",
+  "projects": [
+    {
+      "name": "【Ownership & Leadership】End-to-end Leadership in Recommendation System Architecture Upgrades & Business Growth",
+      "details": [
+        {
+          "icon": "fa-users",
+          "type": "organization",
+          "content": "As Tech Lead, I led full-pipeline optimization of the recommendation system (v23 → v24 → v25), coordinating among algorithm, engineering, and business teams (10+ members), and establishing a cross-department collaboration mechanism."
+        },
+        {
+          "icon": "fa-trophy",
+          "type": "result",
+          "content": "Core annual achievements: component-driven order volume +30.95%, daily trading volume 126M USDT (annual increment 4.11B USDT), conversion efficiency +23.94%."
+        },
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "Built a complete performance evaluation system and AB testing framework to ensure all improvements are purely from model contributions, excluding product or operations influence."
+        }
+      ]
+    },
+    {
+      "name": "【Full-stack Engineering】System Performance Optimization & Cost Control",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "Led offline training pipeline optimization: identified and solved memory explosion issues in offline feature construction, designed a two-phase deduplication strategy, reduced memory peak by 50%, lowered failure rate from 30% to <1%, and reduced processing time from 50 minutes to 30 minutes."
+        },
+        {
+          "icon": "fa-rocket",
+          "type": "deployment",
+          "content": "Led SageMaker online inference optimization: collaborated deeply with engineering to upgrade instance configurations from 300×4x large to 150×8x large, reducing resource cost by 50% while keeping inference stable and performant."
+        },
+        {
+          "icon": "fa-dollar-sign",
+          "type": "result",
+          "content": "Annual cost optimization: offline training costs reduced from 6000 USD/day to 3000 USD/day, online inference cost -50%, total estimated yearly savings 2M+ USD."
+        }
+      ]
+    },
+    {
+      "name": "【Cross-team Influence】Organizational Collaboration & Technical System Building",
+      "details": [
+        {
+          "icon": "fa-handshake",
+          "type": "organization",
+          "content": "Established deep collaboration with the trading team (Tat/Maya/Choco), connecting content recommendation with trading conversion and enabling the first accurate quantification of content-driven trading contribution."
+        },
+        {
+          "icon": "fa-users-cog",
+          "type": "organization",
+          "content": "Drove engineering team (Jeffrey/JerryM) to optimize feature storage (30% compression), inference performance, and deployment pipelines, raising team-wide iteration efficiency."
+        },
+        {
+          "icon": "fa-book",
+          "type": "teaching",
+          "content": "Built standardized SOPs for model launch, evaluation frameworks, and diagnostic workflows; documented methodologies to support knowledge transfer and team capability growth."
+        }
+      ]
+    },
+    {
+      "name": "【Continuous Iteration & Deep Optimization】Feature Engineering & Model Architecture Evolution",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "v23 model: Introduced trading objectives into the recommendation model for the first time; designed a complete trading attribution pipeline from scratch: mapped 20+ trading events, created 60s/1h backfill mechanisms, and integrated futures/spot/alpha scenarios into a unified trading base table."
+        },
+        {
+          "icon": "fa-lightbulb",
+          "type": "algorithm",
+          "content": "Innovatively incorporated trade_click, place_order, main_trade and other trading targets into a multi-objective model, enabling end-to-end optimization of click → dwell → trade and improving attribution accuracy."
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "60-second order volume +16.07%, orders per user +21.78%; in high-conversion scenarios, orders per user increased by 59%–76%."
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "v24 model: systemically enhanced the feature system, introducing Category Features v3 (Track/Product/Content tri-axis classification), enriching user behavior sequence features (click/like/share/follow/comment with category statistics), leading to +32.78% 60-second orders per user."
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "v25 model: enhanced historical trading-widget click sequence features (adding 8 new side-info dimensions including author/token/zone/keyword), integrating them as sequences in the model to better understand user trading intent, increasing daily orders by +1.08%."
+        },
+        {
+          "icon": "fa-search",
+          "type": "optimization",
+          "content": "Proactively identified and fixed multiple legacy feature bugs, establishing a complete data quality monitoring system to ensure fundamental model reliability."
+        }
+      ]
+    }
+  ]
+}

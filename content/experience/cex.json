@@ -1,0 +1,103 @@
+{
+  "company": "某头部交易所 - 广场Feed流 - 算法负责人",
+  "period": "2025年 -- 至今",
+  "role": "广场推荐算法负责人 | Tech Lead",
+  "description": "作为广场Feed流推荐算法负责人，端到端负责推荐系统的算法优化、工程架构和团队协作，推动广场交易转化实现质的飞跃。通过建立完整的交易归因体系、驱动跨团队协作、全栈优化系统性能，年度贡献交易额预估增量41.1亿 USDT",
+  "projects": [
+    {
+      "name": "【Ownership & Leadership】端到端主导推荐系统架构升级与业务增长",
+      "details": [
+        {
+          "icon": "fa-users",
+          "type": "organization",
+          "content": "作为Tech Lead主导推荐系统全链路优化（v23→v24→v25三个版本迭代），协调算法、工程、业务三方团队（10+成员），建立跨部门协作机制"
+        },
+        {
+          "icon": "fa-trophy",
+          "type": "result",
+          "content": "年度核心成果：组件导流订单量+30.95%，日均交易额1.26亿 USDT（年度增量41.1亿 USDT），转化效率提升23.94%"
+        },
+        {
+          "icon": "fa-sitemap",
+          "type": "architecture",
+          "content": "建立完整的效果评估体系与AB测试框架，确保所有指标提升均为纯模型贡献，排除产品、运营等其他因素干扰"
+        }
+      ]
+    },
+    {
+      "name": "【全栈工程能力】系统性能优化与成本控制",
+      "details": [
+        {
+          "icon": "fa-cogs",
+          "type": "engineering",
+          "content": "主导离线训练链路优化：发现并解决离线特征构建内存爆炸问题，设计两阶段去重策略，内存峰值-50%，失败率从30%降至<1%，处理时间从50分钟降至30分钟"
+        },
+        {
+          "icon": "fa-rocket",
+          "type": "deployment",
+          "content": "主导SageMaker线上部署优化：与工程团队深度协作，将实例配置从300台4x large优化至150台8x large，资源成本降低50%，保证推理性能和稳定性"
+        },
+        {
+          "icon": "fa-dollar-sign",
+          "type": "result",
+          "content": "年度成本优化：离线训练成本从日均6000 USD降至3000 USD，线上推理成本-50%，累计年预估节省200万+ USD"
+        }
+      ]
+    },
+    {
+      "name": "【跨团队影响力】推动组织协作与技术体系建设",
+      "details": [
+        {
+          "icon": "fa-handshake",
+          "type": "organization",
+          "content": "与交易团队（Tat/Maya/Choco）建立深度合作关系，打通内容推荐与交易转化的数据链路，首次实现内容对交易贡献的精准量化"
+        },
+        {
+          "icon": "fa-users-cog",
+          "type": "organization",
+          "content": "推动工程团队（Jeffrey/JerryM）完成特征存储优化（压缩30%存储成本）、推理性能优化、部署流水线建设，提升团队整体迭代效率"
+        },
+        {
+          "icon": "fa-book",
+          "type": "teaching",
+          "content": "建立标准化的模型上线SOP、效果评估体系、问题诊断流程，沉淀方法论文档，推动知识传承与团队能力提升"
+        }
+      ]
+    },
+    {
+      "name": "【持续迭代与深度优化】特征工程与模型架构演进",
+      "details": [
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "v23模型：首次在推荐模型中引入交易目标，从0到1设计完整的交易归因技术方案：梳理20+交易埋点，设计60s/1h窗口期回补机制，引入交易底表覆盖futures/spot/alpha三大场景"
+        },
+        {
+          "icon": "fa-lightbulb",
+          "type": "algorithm",
+          "content": "创新性地将trade_click、place_order、main_trade等多个交易目标融入多目标模型，实现点击-时长-交易的端到端优化，解决交易归因准确性问题"
+        },
+        {
+          "icon": "fa-chart-line",
+          "type": "result",
+          "content": "60秒订单成交量+16.07%，人均订单数+21.78%；高转化场景人均订单增幅达59%-76%"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "v24模型：系统性完善特征体系，新增类目特征v3（赛道/产品/内容三维分类），增强用户行为序列特征（click/like/share/follow/comment对应的类目特征及统计特征），60秒人均成单量+32.78%"
+        },
+        {
+          "icon": "fa-brain",
+          "type": "algorithm",
+          "content": "v25模型：完善历史交易组件点击序列特征（新增author/token/zone/keyword等8个side info特征），以序列方式加入模型，提升用户交易意图理解，订单日均+1.08%"
+        },
+        {
+          "icon": "fa-search",
+          "type": "optimization",
+          "content": "主动识别并修复多个历史遗留的特征bug，建立完整的数据质量监控体系，保证模型基础质量"
+        }
+      ]
+    }
+  ]
+}
