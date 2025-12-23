@@ -176,11 +176,12 @@ body {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    align-items: flex-start;
+    align-items: stretch;
+    width: 100%;
 }
 
 .header {
-    flex: 1;
+    flex: 1 1 50%;
     text-align: center;
     background: var(--headerBg-color);
     padding: 1rem;
@@ -189,11 +190,21 @@ body {
 }
 
 .calendly-section {
-    flex: 1;
+    flex: 1 1 50%;
     background: var(--sectionBg-color);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.calendly-section .section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .header h1 {
