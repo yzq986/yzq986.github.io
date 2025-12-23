@@ -1,6 +1,14 @@
 /* 可以将上述HTML中的<style>标签内容移到这个文件中 */
 /* 添加响应式设计 */
 @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .calendly-inline-widget {
+        height: 600px !important;
+    }
+
     .contact-info {
         flex-direction: column;
         align-items: center;
@@ -164,10 +172,25 @@ body {
     padding: 20px;
 }
 
-.header {
-    text-align: center;
+.header-container {
+    display: flex;
+    gap: 2rem;
     margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.header {
+    flex: 1;
+    text-align: center;
     background: var(--headerBg-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.calendly-section {
+    flex: 1;
+    background: var(--sectionBg-color);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--shadow-color);
