@@ -6,7 +6,8 @@ window.i18n.zh = {
         experience: '工作经验',
         awards: '获奖经历',
         projects: '项目经历',
-        social: '社会活动'
+        social: '社会活动',
+        calendar: '约我聊聊'
     },
     buttons: {
         exportPDF: '导出PDF',

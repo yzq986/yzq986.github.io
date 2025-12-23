@@ -6,7 +6,8 @@ window.i18n.en = {
         experience: 'Work Experience',
         awards: 'Awards',
         projects: 'Projects',
-        social: 'Social Activities'
+        social: 'Social Activities',
+        calendar: 'Let\'s Chat'
     },
     buttons: {
         exportPDF: 'Export PDF',
