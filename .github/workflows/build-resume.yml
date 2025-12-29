@@ -12,6 +12,9 @@ on:
       - '.github/workflows/build-resume.yml'
   workflow_dispatch:  # Allow manual triggering
 
+permissions:
+  contents: write
+
 jobs:
   build-resume:
     runs-on: ubuntu-latest
