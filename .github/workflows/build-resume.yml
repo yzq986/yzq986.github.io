@@ -28,9 +28,25 @@ jobs:
     - name: Install LaTeX and fonts
       run: |
         sudo apt-get update
-        sudo apt-get install -y texlive-xetex texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-lang-chinese
-        # Install additional fonts for Chinese support
-        sudo apt-get install -y fonts-noto-cjk fonts-wqy-zenhei fonts-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
+        sudo apt-get install -y texlive-xetex texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-lang-chinese wget unzip
+
+    - name: Download and install Fandol fonts
+      run: |
+        # Create fonts directory
+        mkdir -p ~/.fonts
+
+        # Download Fandol fonts from CTAN
+        wget http://mirrors.ctan.org/fonts/fandol.zip
+        unzip fandol.zip
+
+        # Copy font files to system fonts directory
+        cp -r fandol/fonts/opentype/public/fandol/*.otf ~/.fonts/
+
+        # Update font cache
+        fc-cache -fv
+
+        # Verify Fandol fonts are installed
+        fc-list | grep -i "Fandol" || echo "Warning: Fandol fonts installation may have failed"
 
     - name: Generate English resume LaTeX
       run: |

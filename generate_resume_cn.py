@@ -250,14 +250,10 @@ class ResumeGeneratorCN:
 
 % Chinese support - XeLaTeX required
 \usepackage{xeCJK}
-% Using Noto CJK fonts available in Ubuntu/GitHub Actions
-\setCJKmainfont{Noto Serif CJK SC}[
-  BoldFont=Noto Serif CJK SC Bold,
-]
-\setCJKsansfont{Noto Sans CJK SC}[
-  BoldFont=Noto Sans CJK SC Bold,
-]
-\setCJKmonofont{Noto Sans Mono CJK SC}
+% Using Fandol fonts from texlive-lang-chinese
+\setCJKmainfont{FandolSong}
+\setCJKsansfont{FandolHei}
+\setCJKmonofont{FandolFang}
 
 \definecolor{cvblue}{HTML}{0E5484}
 \definecolor{black}{HTML}{130810}
