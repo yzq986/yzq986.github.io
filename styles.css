@@ -61,11 +61,28 @@
 @media print {
     body {
         padding: 0;
-        font-size: 12pt;
+        font-size: 11pt;
+        background: white !important;
+        color: #000 !important;
     }
 
     .section {
         page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* 避免标题和内容分页 */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    /* 避免列表项被分页截断 */
+    li, .experience-item, .achievement-item, .project-item {
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+        break-inside: avoid;
     }
 }
 
@@ -412,35 +429,138 @@ body {
 
 /* 打印样式优化 */
 @media print {
+    /* 隐藏不需要打印的元素 */
     .theme-toggle,
     .loading,
-    .error-message {
+    .error-message,
+    .calendly-section,
+    .lang-switch,
+    .pdf-export {
         display: none !important;
     }
 
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .section {
-        break-inside: avoid;
-        page-break-inside: avoid;
-        border: none;
-        box-shadow: none;
+    /* 重置布局 */
+    .header-container {
+        display: block !important;
+        margin-bottom: 0.5cm;
     }
 
     .header {
-        margin-bottom: 1cm;
+        margin-bottom: 0.5cm;
+        padding: 0.3cm;
+        background: white !important;
+        box-shadow: none !important;
+        border: none !important;
     }
 
+    body {
+        padding: 1cm;
+        margin: 0;
+        background: white !important;
+        color: #000 !important;
+    }
+
+    /* 确保内容不被截断 */
+    .section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+        border: none !important;
+        box-shadow: none !important;
+        background: white !important;
+        margin: 0.3cm 0;
+        padding: 0.2cm;
+    }
+
+    /* 移除所有阴影和背景 */
+    .achievement-item,
+    .project-item {
+        box-shadow: none !important;
+        background: white !important;
+        border: 1px solid #ddd;
+        padding: 0.2cm;
+        margin-bottom: 0.2cm;
+    }
+
+    /* 链接样式 - 显示 URL */
     a {
         text-decoration: none !important;
-        color: inherit !important;
+        color: #000 !important;
     }
 
+    /* 可选：在链接后显示 URL */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    /* 但不显示锚点链接和 JavaScript 链接的 URL */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    /* 优化列表 */
     .project-list {
         break-inside: avoid;
+        page-break-inside: avoid;
+        padding-left: 0.5cm;
+    }
+
+    /* 确保标题不孤立 */
+    .section-title {
+        page-break-after: avoid;
+        break-after: avoid;
+        border-bottom: 1px solid #000 !important;
+        margin-bottom: 0.2cm;
+        padding-bottom: 0.1cm;
+    }
+
+    /* 优化成就网格布局为单列 */
+    .achievement-list {
+        display: block !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    /* 图标颜色 */
+    .icon {
+        color: #000 !important;
+    }
+
+    /* 确保颜色可打印 */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    /* 优化字体大小 */
+    .header h1 {
+        font-size: 18pt !important;
+        color: #000 !important;
+    }
+
+    h2 {
+        font-size: 14pt !important;
+    }
+
+    h3, h4 {
+        font-size: 12pt !important;
+    }
+
+    /* 移除悬停效果 */
+    .achievement-item:hover,
+    .project-item:hover {
+        transform: none !important;
+        box-shadow: none !important;
+        border-left: none !important;
+    }
+
+    /* 移除动画 */
+    * {
+        animation: none !important;
+        transition: none !important;
     }
 }
 
@@ -599,11 +719,18 @@ button {
 
 /* 打印和PDF导出样式 */
 @media print, .printing {
+    @page {
+        margin: 1.5cm;
+        size: A4;
+    }
+
     body {
         padding: 0 !important;
         margin: 0 !important;
         background: white !important;
-        font-size: 10pt !important;  /* 减小字体大小 */
+        font-size: 10pt !important;
+        color: #000 !important;
+        line-height: 1.4 !important;
     }
 
     .theme-toggle,
@@ -611,60 +738,101 @@ button {
     .pdf-export,
     .loading,
     .error-message,
-    .pdf-loading {
+    .pdf-loading,
+    .calendly-section {
         display: none !important;
+    }
+
+    .header-container {
+        display: block !important;
+        margin-bottom: 0.3cm !important;
     }
 
     .section {
         break-inside: avoid;
         page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
         border: none !important;
         box-shadow: none !important;
         background: white !important;
-        margin: 0.5cm 0 !important;  /* 减小边距 */
-        padding: 0.3cm !important;   /* 减小内边距 */
+        margin: 0.3cm 0 !important;
+        padding: 0.2cm !important;
     }
 
     .header {
-        margin-bottom: 0.5cm !important;
+        margin-bottom: 0.3cm !important;
         background: white !important;
         box-shadow: none !important;
-        padding: 0.3cm !important;
+        padding: 0.2cm !important;
+        border: none !important;
     }
 
     .header h1 {
-        font-size: 16pt !important;  /* 调整标题大小 */
+        font-size: 16pt !important;
         margin-bottom: 0.2cm !important;
+        color: #000 !important;
+        page-break-after: avoid;
     }
 
     .contact-info {
-        gap: 0.3cm !important;
+        gap: 0.2cm !important;
     }
 
     .contact-group {
-        gap: 0.5cm !important;
+        gap: 0.3cm !important;
     }
 
-    .experience-item {
-        margin-bottom: 0.3cm !important;
+    .experience-item,
+    .achievement-item,
+    .project-item {
+        margin-bottom: 0.2cm !important;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+        break-inside: avoid;
+        background: white !important;
+        box-shadow: none !important;
     }
 
     .project-list {
         break-inside: avoid;
-        padding-left: 0.5cm !important;
-    }
-
-    .project-item {
-        margin-bottom: 0.2cm !important;
+        page-break-inside: avoid;
+        padding-left: 0.4cm !important;
     }
 
     .description {
         margin-bottom: 0.2cm !important;
     }
 
+    /* 确保颜色正确显示 */
     * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    /* 移除所有动画和过渡效果 */
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* 优化标题分页 */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        break-after: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* 链接处理 */
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    /* 成就列表单列显示 */
+    .achievement-list {
+        display: block !important;
     }
 }
 
@@ -683,4 +851,77 @@ button {
 
 .printing .print-container {
     visibility: visible;
+}
+
+/* PDF Download Section */
+.pdf-download-section {
+    flex: 1 1 50%;
+    background: var(--sectionBg-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.pdf-download-section .section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pdf-download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.pdf-download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    background: var(--primary-color);
+    color: white !important;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.pdf-download-btn:hover {
+    background: #004494;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    text-decoration: none;
+}
+
+.pdf-download-btn i {
+    font-size: 1.2rem;
+}
+
+/* Mobile adaptation for PDF download section */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .pdf-download-section {
+        order: 2;  /* Place after header but before calendly */
+    }
+
+    .calendly-section {
+        order: 3;
+    }
+}
+
+/* Hide PDF download section when printing */
+@media print {
+    .pdf-download-section {
+        display: none !important;
+    }
 } 

@@ -1,0 +1,70 @@
+name: Build Resume PDFs
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'content/**/*.json'
+      - 'content/i18n/en/**/*.json'
+      - 'generate_resume.py'
+      - 'generate_resume_cn.py'
+      - '.github/workflows/build-resume.yml'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install LaTeX and fonts
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-xetex texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra
+        # Install additional fonts for Chinese support
+        sudo apt-get install -y fonts-noto-cjk fonts-wqy-zenhei fonts-wqy-microhei
+
+    - name: Generate English resume LaTeX
+      run: |
+        python3 generate_resume.py
+
+    - name: Compile English resume to PDF
+      run: |
+        xelatex resume.tex
+        xelatex resume.tex
+
+    - name: Generate Chinese resume LaTeX
+      run: |
+        python3 generate_resume_cn.py
+
+    - name: Compile Chinese resume to PDF
+      run: |
+        xelatex resume_cn.tex
+        xelatex resume_cn.tex
+
+    - name: Create resume directory if not exists
+      run: |
+        mkdir -p resumes
+
+    - name: Move PDFs to resume directory
+      run: |
+        mv resume.pdf resumes/resume_en.pdf
+        mv resume_cn.pdf resumes/resume_cn.pdf
+
+    - name: Commit and push PDFs
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add resumes/*.pdf
+        git diff --staged --quiet || git commit -m "Auto-generate resume PDFs [skip ci]"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

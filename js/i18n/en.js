@@ -7,10 +7,14 @@ window.i18n.en = {
         awards: 'Awards',
         projects: 'Projects',
         social: 'Social Activities',
-        calendar: 'Let\'s Chat'
+        calendar: 'Let\'s Chat',
+        downloadPDF: 'Download PDF Resume',
+        downloadEN: 'English Version',
+        downloadCN: 'Chinese Version'
     },
     buttons: {
         exportPDF: 'Export PDF',
+        downloadPDF: 'Download PDF Resume',
         switchLang: 'Switch Language',
         theme: {
             light: 'Light Mode',

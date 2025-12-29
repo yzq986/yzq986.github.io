@@ -1,0 +1,412 @@
+%-------------------------
+% Resume in Latex (Chinese Version)
+% Auto-generated from JSON data
+% For Overleaf: Set compiler to XeLaTeX in Menu
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+% glyphtounicode is for pdfLaTeX only, not needed for XeLaTeX
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+% Chinese support - XeLaTeX required
+% Using xeCJK package as recommended by Overleaf
+\usepackage{xeCJK}
+% Default font in Overleaf is Fandol (supports both Simplified and Traditional Chinese)
+% Explicitly setting fonts for compatibility
+\setCJKmainfont{FandolSong}[
+  BoldFont=FandolSong-Bold,
+]
+\setCJKsansfont{FandolHei}[
+  BoldFont=FandolHei-Bold,
+]
+\setCJKmonofont{FandolFang}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% XeLaTeX generates Unicode PDF by default, no need for pdfgentounicode
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[1]{
+  \item[]\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING----------
+
+\begin{center}
+    {\huge 叶子卿} \\ \vspace{2pt}
+    {(+86) 131-****-6485}
+    \small{-}
+    \href{mailto:yez****@mail2.sysu.edu.cn}{\color{blue}{yez****@mail2.sysu.edu.cn}}
+    \small{-}
+    \href{https://yzq986.github.io}{\color{blue}{yzq986.github.io}}
+    \vspace{-7pt}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}技术能力}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{算法：}}{ \normalsize{推荐系统架构、模型优化、深度学习}} \\
+     \textbf{\normalsize{语言：}}{ \normalsize{C++、Python、Java}} \\
+     \textbf{\normalsize{机器学习：}}{ \normalsize{TensorFlow、Pytorch}} \\
+     \textbf{\normalsize{数据与工程：}}{ \normalsize{Spark、Hadoop、Docker、Kubernetes、AWS、Git}}
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------AWARDS & HONORS---------------
+\section{\color{airforceblue}奖项与荣誉}
+
+  \resumeItemListStart
+    \resumeItem{\normalsize{\textbf{金奖} --- 2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛总决赛 (2017年12月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{金奖第五名} --- 2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛香港站 (2017年11月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{金奖} --- 2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛沈阳站 (2017年10月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{金奖} --- 2016年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛青岛站 (2016年11月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{金奖第五名} --- 2016年CCPC中国大学生程序设计竞赛长春赛区 (2016年9月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{银奖第十八名} --- 2016年CCPC中国大学生程序设计竞赛总决赛 (2016年12月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{铜牌} --- 2013年全国青少年信息学奥林匹克竞赛 (2013年8月)}}
+    \vspace{-5pt}
+    \resumeItem{\normalsize{\textbf{Meritorious Winner} --- 2017年美国大学生数学建模竞赛 (2017年4月)}}
+    \vspace{-5pt}
+  \resumeItemListEnd
+
+\vspace{-8pt}
+
+%-----------EXPERIENCE-----------
+\section{\color{airforceblue}工作经历}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {某头部交易所 - 广场Feed流 - 算法负责人}{}
+      {广场推荐算法负责人 | Tech Lead}{2025年 -- 至今}
+      \resumeItemListStart
+            \resumeItem{\normalsize{作为广场Feed流推荐算法负责人，端到端负责推荐系统的算法优化、工程架构和团队协作，推动广场交易转化实现质的飞跃。通过建立完整的交易归因体系、驱动跨团队协作、全栈优化系统性能，年度贡献交易额预估增量41.1亿 USD}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{【Ownership \& Leadership】端到端主导推荐系统架构升级与业务增长}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{作为Tech Lead主导推荐系统全链路优化（v23→v24→v25三个版本迭代），协调算法、工程、业务三方团队（10+成员），建立跨部门协作机制}
+                \item \normalsize{年度核心成果：组件导流订单量+30.95\%，日均交易额1.26亿 USD（年度增量41.1亿 USD），转化效率提升23.94\%}
+                \item \normalsize{建立完整的效果评估体系与AB测试框架，确保所有指标提升均为纯模型贡献，排除产品、运营等其他因素干扰}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{【全栈工程能力】系统性能优化与成本控制}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{主导离线训练链路优化：发现并解决离线特征构建内存爆炸问题，设计两阶段去重策略，内存峰值-50\%，失败率从30\%降至<1\%，处理时间从50分钟降至30分钟}
+                \item \normalsize{主导SageMaker线上部署优化：与工程团队深度协作，将实例配置从300台4x large优化至150台8x large，资源成本降低50\%，保证推理性能和稳定性}
+                \item \normalsize{年度成本优化：离线训练成本从日均6000 USD降至3000 USD，线上推理成本-50\%，累计年预估节省200万+ USD}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{【跨团队影响力】推动组织协作与技术体系建设}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{与交易团队（Tat/Maya/Choco）建立深度合作关系，打通内容推荐与交易转化的数据链路，首次实现内容对交易贡献的精准量化}
+                \item \normalsize{推动工程团队（Jeffrey/JerryM）完成特征存储优化（压缩30\%存储成本）、推理性能优化、部署流水线建设，提升团队整体迭代效率}
+                \item \normalsize{建立标准化的模型上线SOP、效果评估体系、问题诊断流程，沉淀方法论文档，推动知识传承与团队能力提升}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{【持续迭代与深度优化】特征工程与模型架构演进}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{v23模型：首次在推荐模型中引入交易目标，从0到1设计完整的交易归因技术方案：梳理20+交易埋点，设计60s/1h窗口期回补机制，引入交易底表覆盖futures/spot/alpha三大场景}
+                \item \normalsize{创新性地将trade\_click、place\_order、main\_trade等多个交易目标融入多目标模型，实现点击-时长-交易的端到端优化，解决交易归因准确性问题}
+                \item \normalsize{60秒订单成交量+16.07\%，人均订单数+21.78\%；高转化场景人均订单增幅达59\%-76\%}
+                \item \normalsize{v24模型：系统性完善特征体系，新增类目特征v3（赛道/产品/内容三维分类），增强用户行为序列特征（click/like/share/follow/comment对应的类目特征及统计特征），60秒人均成单量+32.78\%}
+                \item \normalsize{v25模型：完善历史交易组件点击序列特征（新增author/token/zone/keyword等8个side info特征），以序列方式加入模型，提升用户交易意图理解，订单日均+1.08\%}
+                \item \normalsize{主动识别并修复多个历史遗留的特征bug，建立完整的数据质量监控体系，保证模型基础质量}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Tiktok - 国际化电商 - 算法专家}{}
+      {国际化电商推荐组成员}{2024年 -- 2025年}
+      \resumeItemListStart
+            \resumeItem{\normalsize{排序基础技术优化，持续迭代粗精排的特征信号、模型结构、样本和排序目标}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{粗排 Listwise 数据流蒸馏}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{通过补充全精排打分样本至粗排数据流，实现线上线下打分对齐}
+                \item \normalsize{采用蒸馏任务作为隐式任务头，优化蒸馏策略，反转掉重型结构}
+                \item \normalsize{US地区获得商城人均GMV+1.4957\%，UV\_CTR+0.4300\%显著提升}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{粗排融合公式迭代，VT链路重构}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{优化粗排融合公式配置化管理，简化模型调整流程}
+                \item \normalsize{系统化调参策略优化}
+                \item \normalsize{US区域获得显著增长：UV\_CTR +0.3650\%，GMV +0.9536\%}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{精排子场景，小模型替代大模型}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{通过复用全场景大模型与场景内小模型的结合方式，成功用Lite模型替代原有场景内大模型}
+                \item \normalsize{小模型使用场景内样本流训练，减少资源消耗，加速训练过程}
+                \item \normalsize{保持GMV和CTCVR基本持平的同时，减少52.73\%训练PS消耗与79.9\%线上PS消耗}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Shopee SG - 高级算法工程师}{}
+      {Daily Discovery组成员}{2021年 -- 2024年}
+      \resumeItemListStart
+            \resumeItem{\normalsize{针对Shopee首页推荐业务，设计排序模型以及效果性能优化}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{全区域上线第一版多目标级联粗排模型}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{与精排共用训练推理框架，通过缓存item侧embedding加速线上推理过程}
+                \item \normalsize{选用三塔+顶部MLP融合架构，在保证推理效率前提下获得交叉信息}
+                \item \normalsize{在3000 item输入量下，粗排延迟约46ms，全区域获得显著提升}
+                \item \normalsize{ID +2.33\% click +1.59\%，BR +2.3\% order，VN +3.92\% order等多项指标改善}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{双粗排联合模型研究实践}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{使用in-batch随机负样本并借鉴CLIP的双向计算CE loss与自适应温度系数}
+                \item \normalsize{离线实现+5.23\%的order提升，线上ID和SG区域分别取得+2.3\% click和+3.36\% order提升}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{粗排多目标升级ESMM结构}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{引入多级别目标，灵活调整线上评分序列的权重，优化item排名与隐含目标训练}
+                \item \normalsize{ID区域获得order/u 3.35\%的提升}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{精排升级JRC结构}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{将pointwise训练替换为listwise训练，借鉴RCR loss和JRC论文中的CE+GE loss}
+                \item \normalsize{ID区域获得click/u 4\%的提升}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{商店展示页精排模型特征筛选}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{引入slot乘子优化特征筛选，去掉59个低权重乘子}
+                \item \normalsize{减少50\%存储容量，提升50\%训练速度}
+                \item \normalsize{全局click持平情况下，order指标提升+1.27\%}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {微信视频号 - 算法工程师}{}
+      {算法推荐一组成员}{2020年 -- 2021年}
+      \resumeItemListStart
+            \resumeItem{\normalsize{完成微信视频号视频推荐算法相关研究及后台数据支持}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{lookalike模型架构搭建}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{在热门feed推荐中搭建lookalike链路，完成u2u人群扩展}
+                \item \normalsize{通过mq缓冲处理，使同一item的曝光聚合后生成hist数据，日曝光量约3.3亿}
+                \item \normalsize{使用cache做轮次内缓存，bdemem做轮次间缓存，优化线上推理性能}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{框架预测流程迁移接入metis 1.0架构}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{完成模型架构转移，使模型infer embedding部分逻辑与原流程解耦}
+                \item \normalsize{新建rpc接口，负责对所有请求计算infer的embedding值}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{冷启动推荐提权融合公式修改}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{替换原有冷启链路，启用基于pid控制的融合提权公式}
+                \item \normalsize{精细化考虑观看时长、完播、点赞等特征，调整冷启出量控制}
+            \end{itemize}
+            \vspace{1pt}
+            \resumeItem{\normalsize{\textbf{推荐架构数组类型特征支持}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{在视频feed推荐流程中新增对数组类型feature的支持}
+                \item \normalsize{完成在数据流模型中各部分对列表特征的支持}
+                \item \normalsize{完成在线数据流与模型训练的对接工作}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Google - 软件开发工程师}{}
+      {软件开发工程师}{2019年 -- 2020年}
+      \resumeItemListStart
+            \resumeItem{\normalsize{完成广告收入预测项目的开发、实现、测试、上线}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{广告收入预测项目}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{基于Google广告业务的收入数据，设计算法框架，实现对广告收入的预测}
+                \item \normalsize{分别对一天、一个月、一个季度、一年的收入进行预测}
+                \item \normalsize{识别每年的高峰收入时间区域，并完成对比测试和上线}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {BIGO - 算法工程师 - 实习}{}
+      {算法组成员}{2019年}
+      \resumeItemListStart
+            \resumeItem{\normalsize{完成音频快速聚类算法专利，实现所有代码细节}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{音频快速聚类算法专利}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{针对BIGO短视频app Like的音频特点，设计适合在给定时间限制内完成大量短视频音频比对的hash算法}
+                \item \normalsize{设计对应的特征聚类算法，针对业务特点进行算法时间复杂度优化}
+                \item \normalsize{使算法适用于业务场景大规模的数据比对需求}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {香港理工大学 - 研究助理}{}
+      {研究助理（交换生）}{2018年}
+      \resumeItemListStart
+            \resumeItem{\normalsize{作为交换生期间担任研究助理，主要研究区块链技术在供应链管理中的应用}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{\textbf{区块链驱动的可信供应链系统研究}}}
+            \begin{itemize}[leftmargin=0.2in]
+                \item \normalsize{研究区块链技术在供应链可信度和透明度方面的应用潜力}
+                \item \normalsize{设计并实现基于区块链的供应链追踪原型系统}
+            \end{itemize}
+            \vspace{1pt}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}教育背景}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {中山大学}{2015 年 -- 2019 年}
+      {计算机科学与技术专业}{GPA: 3.8/4.0}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\color{airforceblue}课外活动}
+
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{技术部部长} --- 中山大学ACMM协会 --- {2016年 -- 2017年} }}
+        \resumeItem{\normalsize{组织举办算法讲座、程序设计新手赛、校赛}}
+        \vspace{-5pt}
+      \resumeItemListEnd
+
+\vspace{-12pt}
+
+\end{document}

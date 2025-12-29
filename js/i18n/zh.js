@@ -7,10 +7,14 @@ window.i18n.zh = {
         awards: '获奖经历',
         projects: '项目经历',
         social: '社会活动',
-        calendar: '约我聊聊'
+        calendar: '约我聊聊',
+        downloadPDF: '下载PDF简历',
+        downloadEN: 'English Version',
+        downloadCN: '中文版'
     },
     buttons: {
         exportPDF: '导出PDF',
+        downloadPDF: '下载PDF简历',
         switchLang: '切换语言',
         theme: {
             light: '浅色模式',
