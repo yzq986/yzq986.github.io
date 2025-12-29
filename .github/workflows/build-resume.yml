@@ -36,17 +36,18 @@ jobs:
         mkdir -p ~/.fonts
 
         # Download Fandol fonts from CTAN
-        wget http://mirrors.ctan.org/fonts/fandol.zip
-        unzip fandol.zip
+        wget -q http://mirrors.ctan.org/fonts/fandol.zip
+        unzip -q fandol.zip
 
-        # Copy font files to system fonts directory
-        cp -r fandol/fonts/opentype/public/fandol/*.otf ~/.fonts/
+        # Find and copy all .otf font files
+        find fandol -name "*.otf" -exec cp {} ~/.fonts/ \;
 
         # Update font cache
         fc-cache -fv
 
-        # Verify Fandol fonts are installed
-        fc-list | grep -i "Fandol" || echo "Warning: Fandol fonts installation may have failed"
+        # List installed Fandol fonts for debugging
+        echo "Installed Fandol fonts:"
+        fc-list | grep -i "Fandol" || echo "Warning: No Fandol fonts found after installation"
 
     - name: Generate English resume LaTeX
       run: |

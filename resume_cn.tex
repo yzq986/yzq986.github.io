@@ -26,16 +26,10 @@
 \RequirePackage{xcolor}
 
 % Chinese support - XeLaTeX required
-% Using xeCJK package as recommended by Overleaf
 \usepackage{xeCJK}
-% Default font in Overleaf is Fandol (supports both Simplified and Traditional Chinese)
-% Explicitly setting fonts for compatibility
-\setCJKmainfont{FandolSong}[
-  BoldFont=FandolSong-Bold,
-]
-\setCJKsansfont{FandolHei}[
-  BoldFont=FandolHei-Bold,
-]
+% Using Fandol fonts from texlive-lang-chinese
+\setCJKmainfont{FandolSong}
+\setCJKsansfont{FandolHei}
 \setCJKmonofont{FandolFang}
 
 \definecolor{cvblue}{HTML}{0E5484}
