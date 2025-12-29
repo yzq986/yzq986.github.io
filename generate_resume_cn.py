@@ -249,17 +249,15 @@ class ResumeGeneratorCN:
 \RequirePackage{xcolor}
 
 % Chinese support - XeLaTeX required
-% Using xeCJK package as recommended by Overleaf
 \usepackage{xeCJK}
-% Default font in Overleaf is Fandol (supports both Simplified and Traditional Chinese)
-% Explicitly setting fonts for compatibility
-\setCJKmainfont{FandolSong}[
-  BoldFont=FandolSong-Bold,
+% Using Noto CJK fonts available in Ubuntu/GitHub Actions
+\setCJKmainfont{Noto Serif CJK SC}[
+  BoldFont=Noto Serif CJK SC Bold,
 ]
-\setCJKsansfont{FandolHei}[
-  BoldFont=FandolHei-Bold,
+\setCJKsansfont{Noto Sans CJK SC}[
+  BoldFont=Noto Sans CJK SC Bold,
 ]
-\setCJKmonofont{FandolFang}
+\setCJKmonofont{Noto Sans Mono CJK SC}
 
 \definecolor{cvblue}{HTML}{0E5484}
 \definecolor{black}{HTML}{130810}
