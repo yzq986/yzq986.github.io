@@ -1,6 +1,13 @@
 {
   "awards": [
     {
+      "title": "\"We Commit\" Value Star Awards",
+      "date": "2022年12月",
+      "description": "Shopee 2022年年度奖项",
+      "type": "award",
+      "icon": "fa-star"
+    },
+    {
       "title": "金奖",
       "date": "2017年12月",
       "description": "2017年ACM-ICPC国际大学生程序设计竞赛亚洲区域赛总决赛",

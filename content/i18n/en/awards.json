@@ -1,6 +1,13 @@
 {
   "awards": [
     {
+      "title": "\"We Commit\" Value Star Awards",
+      "date": "December 2022",
+      "description": "Shopee Annual Award 2022",
+      "type": "award",
+      "icon": "fa-star"
+    },
+    {
       "title": "Gold Medal",
       "date": "December 2017",
       "description": "ACM-ICPC Asia Regional Contest Finals 2017",
